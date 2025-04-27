@@ -17,9 +17,6 @@ Insert gif or link to demo
 - Feature 2
 - Feature 3
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Run Locally
 
@@ -50,12 +47,4 @@ Open with live server
 
 ## Authors
 
-- [@codewithsadee](https://www.github.com/codewithsadee)
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Support
-
-For support, Join my [Patreon Comunity](https://www.patreon.com/codewithsadee/membership) or Subscribe My [YouTube Channel](https://youtube.com/@codewithsadee).
+- [@amareshmaharana](https://www.github.com/amareshmaharana)
