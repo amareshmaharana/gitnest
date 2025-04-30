@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,12 +10,12 @@
       content="Find a guthub user information and repositories with GitNest"
     />
 
-    <link rel="shortcut-icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/png" />
 
     <!--------
         FOR THEME
            ---------->
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/theme.js" type="module"></script>
 
     <!-------- Google font --------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,5 +37,98 @@
     <!--------- Custom JS link --------->
     <script src="./assets/js/app.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <!-------- SKIP TO CONTENT --------->
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+
+    <!-------- HEADER --------->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="/" class="logo">
+          <span class="text-primary">.git</span>Nest
+        </a>
+
+        <div class="header-search">
+          <button
+            class="icon-btn search-toggler"
+            aria-controls="searchBox"
+            aria-expanded="false"
+            aria-label="Toggle search"
+            data-search-toggler
+          >
+            <span
+              class="material-symbols-rounded search-icon"
+              aria-hidden="true"
+              >search</span
+            >
+
+            <span class="material-symbols-rounded close-icon" aria-hidden="true"
+              >arrow_back</span
+            >
+          </button>
+
+          <div class="search-box" id="searchBox">
+            <span
+              class="material-symbols-rounded leading-icon"
+              aria-hidden="true"
+              >search</span
+            >
+            <input
+              type="search"
+              name="search"
+              aria-label="Search GitHub username"
+              class="search-field label-1"
+              data-search-field
+              placeholder="Search @username*"
+            />
+
+            <button
+              class="search-btn"
+              aria-label="Search submit"
+              data-search-submit
+            >
+              <span class="material-symbols-rounded" aria-hidden="true"
+                >search</span
+              >
+
+              <span class="label-1">Search</span>
+            </button>
+          </div>
+        </div>
+
+        <button
+          class="icon-btn theme-btn"
+          aria-pressed="false"
+          aria-label="Toggle dark and light theme"
+          data-theme-btn
+        >
+          <span class="material-symbols-rounded sun-icon" aria-hidden="true">
+            light_mode
+          </span>
+
+          <span class="material-symbols-rounded moon-icon" aria-hidden="true">
+            dark_mode
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main" id="main">
+      <div class="container">
+        <!---------
+             PROFILE SECTION
+                        ----------->
+
+        <section class="profile" data-profile-card>
+          <div class="profile-skeleton">
+            <div class="skeleton avatar-skeleton"></div>
+            <div class="skeleton title-skeleton"></div>
+            <div class="skeleton text-skeleton text-1"></div>
+            <div class="skeleton text-skeleton text-2"></div>
+            <div class="skeleton text-skeleton text-3"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
