@@ -15,7 +15,7 @@
     <!--------
         - FOR THEME
            --------->
-           
+
     <script src="assets/js/theme.js" type="module"></script>
 
     <!-------- Google font --------->
@@ -116,12 +116,9 @@
 
     <main class="main" id="main">
       <div class="container">
-
-
         <!---------
-             PROFILE SECTION
+             - PROFILE SECTION
                         ----------->
-
 
         <section class="profile" data-profile-card>
           <figure
@@ -153,7 +150,6 @@
           </a>
 
           <ul class="profile-meta">
-
             <li class="meta-item">
               <span class="material-symbols-rounded" aria-hidden="true"
                 >location_on</span
@@ -173,7 +169,7 @@
                 >captive_portal</span
               >
               <a href="#" target="_blank" class="meta-text"
-                >linkedin.com/in/amareshmaharana</a
+                >amareshmaharana.netlify.app</a
               >
             </li>
 
@@ -195,25 +191,17 @@
             </li>
           </ul>
 
-
           <ul class="profile-stats">
-            <li class="stats-item">
-              <span class="body">21</span> Repos
-            </li>
+            <li class="stats-item"><span class="body">21</span> Repos</li>
 
-            <li class="stats-item">
-              <span class="body">10</span> Followers
-            </li>
+            <li class="stats-item"><span class="body">10</span> Followers</li>
 
-            <li class="stats-item">
-              <span class="body">15</span> Following
-            </li>
+            <li class="stats-item"><span class="body">15</span> Following</li>
           </ul>
 
           <div class="footer">
             <p class="copyright">&copy; 2025 gitNest. All rights reserved.</p>
           </div>
-          
 
           <!-- <div class="profile-skeleton">
             <div class="skeleton avatar-skeleton"></div>
@@ -224,16 +212,287 @@
           </div> -->
         </section>
 
-
-
-        <!---
-          - TAB
-              --->
+        <!---------
+          - TAB SECTION
+                 ---------->
 
         <section class="tab-container">
-          
+          <div class="tab-list" aria-label="Tab navigation" role="tablist">
+            <button
+              class="tab-btn"
+              aria-selected="true"
+              role="tab"
+              id="tab-1"
+              tabindex="0"
+              aria-controls="panel-1"
+              data-tab-btn
+            >
+              Repositories
+            </button>
+
+            <button
+              class="tab-btn"
+              aria-selected="false"
+              role="tab"
+              id="tab-2"
+              tabindex="-1"
+              aria-controls="panel-2"
+              data-forked-tab-btn
+            >
+              Forked
+            </button>
+
+            <button
+              class="tab-btn"
+              aria-selected="false"
+              role="tab"
+              id="tab-3"
+              tabindex="-1"
+              aria-controls="panel-3"
+              data-followers-tab-btn
+            >
+              Followers
+            </button>
+
+            <button
+              class="tab-btn"
+              aria-selected="false"
+              role="tab"
+              id="tab-4"
+              tabindex="-1"
+              aria-controls="panel-4"
+              data-following-tab-btn
+            >
+              Following
+            </button>
+          </div>
+
+          <div
+            class="tab-panel"
+            id="panel-1"
+            role="tabpanel"
+            aria-labelledby="tab-1"
+            tabindex="0"
+            data-tab-panel
+            data-repo-panel
+          >
+            <h1 class="sr-only">Repositories</h1>
+
+            <article class="card repo-card">
+              <div class="card-body">
+                <a href="#" target="_blank" class="card-title">
+                  <h3 class="title-3">netflix-clone</h3>
+                </a>
+
+                <p class="card-text">
+                  A Netflix clone built with React, Next.js, and Tailwind CSS.
+                </p>
+                <span class="badge">Public</span>
+              </div>
+
+              <div class="card-footer">
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >code_blocks</span
+                  >
+                  <span class="span">React JS</span>
+                </div>
+
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >star</span
+                  >
+                  <span class="span">15</span>
+                </div>
+
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >family_history</span
+                  >
+                  <span class="span">4</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="card repo-skeleton">
+              <div class="card-body">
+                <div class="skeleton title-skeleton"></div>
+                <div class="skeleton text-skeleton text-1"></div>
+                <div class="skeleton text-skeleton text-2"></div>
+              </div>
+              
+              <div class="card-footer">
+                <div class="skeleton text-skeleton"></div>
+                <div class="skeleton text-skeleton"></div>
+                <div class="skeleton text-skeleton"></div>
+              </div>
+            </div>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">404 | Doesn't have any repositories yet.</p>
+            </div>
+          </div>
+
+          <div
+            class="tab-panel"
+            id="panel-2"
+            role="tabpanel"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            data-tab-panel
+            data-fork-panel
+            hidden
+          >
+            <h1 class="sr-only">Forked repositories</h1>
+
+            <article class="card repo-card">
+              <div class="card-body">
+                <a href="#" target="_blank" class="card-title">
+                  <h3 class="title-3">netflix-clone</h3>
+                </a>
+
+                <p class="card-text">
+                  A Netflix clone built with React, Next.js, and Tailwind CSS.
+                </p>
+                <span class="badge">Public</span>
+              </div>
+
+              <div class="card-footer">
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >code_blocks</span
+                  >
+                  <span class="span">React JS</span>
+                </div>
+
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >star</span
+                  >
+                  <span class="span">15</span>
+                </div>
+
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >family_history</span
+                  >
+                  <span class="span">4</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">
+                404 | Doesn't have any forked repositories yet.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tab-panel"
+            id="panel-3"
+            role="tabpanel"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            data-tab-panel
+            data-follower-panel
+            hidden
+          >
+            <h1 class="sr-only">Followers</h1>
+
+            <article class="card follower-card">
+              <figure class="avatar-circle img-holder">
+                <img
+                  src="./assets/images/follower-img.png"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  alt="avatar"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="card-title">John Doe</h3>
+
+              <button class="icon-btn" aria-label="Go to profile">
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >link</span
+                >
+              </button>
+            </article>
+
+            <div class="card follower-skeleton">
+              <div class="skeleton avatar-skeleton"></div>
+              <div class="skeleton title-skeleton"></div>
+            </div>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">404 | Doesn't have any followers yet.</p>
+            </div>
+          </div>
+
+          <div
+            class="tab-panel"
+            id="panel-4"
+            role="tabpanel"
+            aria-labelledby="tab-4"
+            tabindex="0"
+            data-tab-panel
+            data-following-panel
+            hidden
+          >
+            <h1 class="sr-only">Following</h1>
+
+            <article class="card follower-card">
+              <figure class="avatar-circle img-holder">
+                <img
+                  src="./assets/images/follower-img.png"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  alt="avatar"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="card-title">John Doe</h3>
+
+              <button class="icon-btn" aria-label="Go to profile">
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >link</span
+                >
+              </button>
+            </article>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">404 | Doesn't have any following yet.</p>
+            </div>
+          </div>
+        </section>
+
+        <!---------
+             - ERROR SECTION
+                      ---------->
+
+        <section class="error" data-error>
+          <p class="title-1">Oops! :(</p>
+          <p class="text">
+            404&nbsp; |&nbsp; Not found the account with this username yet.
+          </p>
         </section>
       </div>
     </main>
+
+    <!---------
+      - FOOTER
+             ---------->
+
+    <footer class="footer container">
+      <p class="copyright">&copy; 2025 gitNest. All rights reserved.</p>
+    </footer>
   </body>
 </html>
