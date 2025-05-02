@@ -580,6 +580,7 @@ body {
 }
 
 .repo-card .card-title {
+  color: var(--on-surface);
   max-width: max-content;
   padding-inline-end: 76px;
   transition: var(--transition-short);
@@ -980,3 +981,180 @@ body {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/** 
+* for larger than 768px
+*/
+
+@media (min-width: 768px) {
+  /** 
+    CUSTOM PROPERTY
+  */
+
+  :root {
+    --header-height: 80px;
+  }
+
+  /*
+    REUSED STYLE
+  */
+
+  body {
+    padding-block: calc(var(--header-height) + 16px) 32px;
+  }
+
+  .container {
+    padding-inline: 36px;
+  }
+
+  /**
+    COMPONENT
+  */
+
+  /* CARD */
+
+  .card {
+    --spacing: 24px;
+  }
+
+  /* SKELETON */
+
+  .avatar-skeleton {
+    width: 200px;
+    height: 200px;
+  }
+
+  /**
+    HEADER
+  */
+
+  .search-btn .material-symbols-rounded,
+  .search-toggler {
+    display: none;
+  }
+
+  .search-box .leading-icon,
+  .search-btn .label-1,
+  .header:not(.search-active) .search-box {
+    display: block;
+  }
+
+  .search-box .leading-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  .search-field {
+    padding-inline: 56px 88px;
+  }
+
+  .search-btn {
+    width: max-content;
+    padding-inline: 16px;
+  }
+
+  .header-search {
+    max-width: 360px;
+  }
+
+  /**
+    PROFILE
+  */
+
+  .main .container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 36px;
+    align-items: flex-start;
+  }
+
+  .profile :where(.avatar-circle, .avatar-rounded) {
+    width: 200px;
+  }
+
+  .profile {
+    margin-block-end: 0;
+    position: sticky;
+    top: calc(var(--header-height) + 16px);
+  }
+
+  .profile .footer {
+    display: block;
+    margin-block-start: 24px;
+  }
+
+  /**
+    TAB
+  */
+
+  .tab-container .tab-list {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  /**
+    FOOTER
+  */
+
+  .footer {
+    display: none; 
+  }
+}
+
+
+/**
+  for larger than 992px
+*/
+
+@media (min-width: 992px) {
+  /**
+    REUSED STYLE
+  */
+
+  .container {
+    padding-inline: 32px;
+  }
+
+
+  /**
+    COMPONENTS
+  */
+
+  /* skeleton */
+
+  .avatar-skeleton {
+    width: 280px;
+    height: 280px;
+  }
+
+
+  /**
+    PROFILE
+  */
+  
+  .main .container {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .profile :where(.avatar-circle, .avatar-rounded) {
+    width: 280px;
+  }
+}
+
+
+
+/**
+  for larger than 1080px
+*/
+
+@media (min-width: 1080px) {
+  /**
+    TAB
+  */
+
+  .tab-panel .card {
+    max-width: calc(50% - 8px);
+  }
+}
