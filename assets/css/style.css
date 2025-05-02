@@ -692,6 +692,7 @@ body {
   }
 }
 
+/* FOR REPO SKELETON */
 .repo-skeleton,
 .follower-skeleton {
   background-color: var(--alpha-5);
@@ -715,6 +716,8 @@ body {
   max-width: 56px;
   flex-grow: 1;
 }
+
+/* FOR FOLLOWER SKELETON */
 
 .follower-skeleton {
   display: flex;
